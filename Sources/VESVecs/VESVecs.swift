@@ -31,59 +31,59 @@ public struct Vec2d {
         self / self.length
     }
     
-    init<T: BinaryFloatingPoint>(x: T, y: T) {
+    public init<T: BinaryFloatingPoint>(x: T, y: T) {
         self.x = Double(x)
         self.y = Double(y)
     }
-    init<T: BinaryFloatingPoint>(_ x: T, _ y: T) {
+    public init<T: BinaryFloatingPoint>(_ x: T, _ y: T) {
         self.x = Double(x)
         self.y = Double(y)
     }
-    init<T: BinaryInteger>(x: T, y: T) {
+    public init<T: BinaryInteger>(x: T, y: T) {
         self.x = Double(x)
         self.y = Double(y)
     }
-    init<T: BinaryInteger>(_ x: T, _ y: T) {
+    public init<T: BinaryInteger>(_ x: T, _ y: T) {
         self.x = Double(x)
         self.y = Double(y)
     }
-    init<T: BinaryFloatingPoint>(from val: (x: T, y: T)) {
+    public init<T: BinaryFloatingPoint>(from val: (x: T, y: T)) {
         self.x = Double(val.x)
         self.y = Double(val.y)
     }
-    init<T: BinaryInteger>(from val: (x: T, y: T)) {
+    public init<T: BinaryInteger>(from val: (x: T, y: T)) {
         self.x = Double(val.x)
         self.y = Double(val.y)
     }
-    init<T: BinaryFloatingPoint>(_ val: (x: T, y: T)) {
+    public init<T: BinaryFloatingPoint>(_ val: (x: T, y: T)) {
         self.x = Double(val.x)
         self.y = Double(val.y)
     }
-    init<T: BinaryInteger>(_ val: (x: T, y: T)) {
+    public init<T: BinaryInteger>(_ val: (x: T, y: T)) {
         self.x = Double(val.x)
         self.y = Double(val.y)
     }
-    init<T: BinaryFloatingPoint, U: BinaryInteger>(from val: (x: T, y: U)) {
+    public init<T: BinaryFloatingPoint, U: BinaryInteger>(from val: (x: T, y: U)) {
         self.x = Double(val.x)
         self.y = Double(val.y)
     }
-    init<T: BinaryInteger, U: BinaryFloatingPoint>(from val: (x: T, y: U)) {
+    public init<T: BinaryInteger, U: BinaryFloatingPoint>(from val: (x: T, y: U)) {
         self.x = Double(val.x)
         self.y = Double(val.y)
     }
-    init<T: BinaryFloatingPoint, U: BinaryInteger>(_ val: (x: T, y: U)) {
+    public init<T: BinaryFloatingPoint, U: BinaryInteger>(_ val: (x: T, y: U)) {
         self.x = Double(val.x)
         self.y = Double(val.y)
     }
-    init<T: BinaryInteger, U: BinaryFloatingPoint>(_ val: (x: T, y: U)) {
+    public init<T: BinaryInteger, U: BinaryFloatingPoint>(_ val: (x: T, y: U)) {
         self.x = Double(val.x)
         self.y = Double(val.y)
     }
-    init(from val: CGVector) {
+    public init(from val: CGVector) {
         self.x = val.dx
         self.y = val.dy
     }
-    init(_ val: CGVector) {
+    public init(_ val: CGVector) {
         self.x = val.dx
         self.y = val.dy
     }
